@@ -88,8 +88,6 @@ dependencies {
     //ktor
     implementation "io.ktor:ktor-server-core:2.2.2"
     implementation "io.ktor:ktor-server-netty:2.2.2"
-
-
 }
 
 // Allow references to generated code
