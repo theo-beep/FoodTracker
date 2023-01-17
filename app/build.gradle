@@ -85,6 +85,10 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
+    //ktor
+    implementation "io.ktor:ktor-server-core:2.2.2"
+    implementation "io.ktor:ktor-server-netty:2.2.2"
+
 
 }
 
