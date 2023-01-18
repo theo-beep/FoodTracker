@@ -68,12 +68,11 @@ dependencies {
     implementation "com.google.dagger:hilt-android:2.44.2"
     kapt "com.google.dagger:hilt-compiler:2.44.2"
 
-
+    //compose
     def composeBom = platform('androidx.compose:compose-bom:2022.12.00')
     implementation composeBom
     androidTestImplementation composeBom
 
-    // Choose one of the following:
     // Material Design 3
     implementation 'androidx.compose.material3:material3'
 
@@ -86,8 +85,12 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
     //ktor
-    implementation "io.ktor:ktor-server-core:2.2.2"
-    implementation "io.ktor:ktor-server-netty:2.2.2"
+    def ktor_version = "2.2.2"
+    implementation "io.ktor:ktor-client-core:$ktor_version"
+    implementation "io.ktor:ktor-client-android:$ktor_version"
+    implementation "io.ktor:ktor-client-serialization:$ktor_version"
+    implementation "io.ktor:ktor-client-logging:$ktor_version"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
 }
 
 // Allow references to generated code
